@@ -1,0 +1,326 @@
+:root{
+    --fontstyle_h1: "Smooch", cursive;
+    --fontstyle_h: 'Dancing Script', cursive; 
+    --color_h3:  'Smooch', cursive;
+    --fontstyl_p: ;
+    --color_p: black ;
+    --bg_btn: white;
+    --bg_by: #636363;
+    --color_by_pdf: white;
+    --color_btn_hv: #EB5757 ;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/joshua-coleman-FYev7eaTcRE-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* start header*/
+header{
+    width: 100%;
+    min-height: 5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 4px solid black;
+}
+header .logo{
+    min-width: 30em;
+}
+header .logo h1{
+    font-size: 3rem;
+    font-family: var(--fontstyle_h1);
+    color: transparent;
+    background: linear-gradient(to right, #eb5757, #000000);
+    background-size: cover;
+    -webkit-background-clip: text;
+    word-spacing: .5rem;
+}
+header .navbar{
+    min-width: 23em;
+    display: flex;
+    justify-content: flex-end;
+}
+header .navbar a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1cm;
+    font-size: 2em;
+    transition: all 0.25s;
+}
+header .navbar a:hover{
+    color: var(--color_h);
+}
+/* end header*/
+/* start section*/
+section{
+    margin-top: 1em;
+    max-width: 100%;
+    min-height: 50em;
+    position: relative;
+}
+section .inpt{
+    max-width: 30rem;
+    height: 2em;
+    margin: 10px 0 30px 20px;
+}
+
+section .inpt input{
+    min-width: 20rem;
+    height: 1.7em;
+    padding: 10px 27px;
+    margin: .2em .5em;
+    border-radius: 2px;
+    border: none;
+}
+section .inpt .btn_1{
+    padding: 5px 15px;
+    border-radius: 12px;
+    border: none;
+    color: black;
+    background: var(--bg_btn);
+    cursor: pointer;
+    transition: all 0.25s;
+}
+section .inpt .btn_1:hover{
+    color: var(--color_btn_hv);
+}
+section .container{
+    max-width: 60em;
+    min-height: 10em;
+    padding: 30px 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+section .container h2{
+    font-size: 3rem;
+    margin: .5em 0;
+    font-family: var(--fontstyle_h);
+    color: var(--color_h);
+}
+section .container p{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: var(--fontstyle_p);
+    color: var(--color_p);
+}
+section .container .btn_2{
+    padding: .5em 4em;
+    border: none;
+    border-radius: 6px;
+    background: var(--bg_btn);
+    cursor: pointer;
+    transition: all 0.25s;
+}
+section .container .btn_2:hover{
+    color: var(--color_btn_hv);
+}
+section .h_3{
+    font-size: 3em;
+    font-family: var(--fontstyle_h);
+    color: var(--color_h3);
+    text-align: center;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+section .cards{
+    max-width: 70em;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3rem auto;
+}
+section .cards .card{
+    width: 20em;
+    height: 23em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-position: center;
+    background-size: cover;
+    transition: all .25s;
+    cursor: pointer;
+}
+.card_1{
+    background: url(images/bg_1.jpg);
+}
+.card_2{
+    background: url(images/bg_2.jpg);
+}
+.card_3{
+    background: url(images/bg_3.jpg);
+}
+section .cards .card:hover{
+    transform: scale(1.008);
+}
+.PDF , .buy{
+    width: 20em;
+    background-color: var(--bg_by);
+    border-bottom: 1px solid black;
+    text-align: center;
+    color: var(--color_by_pdf);
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-family: sans-serif;
+}
+section .cards .box .buy{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+ .PDF:hover , .buy:hover{
+    color: #EB5757;
+}
+
+/* end section*/
+/* start footer*/
+footer{
+    border-top: 3px white solid;
+    min-height: 9.5em;
+    max-width: 100%;
+    text-align: center;
+}
+footer .links a img{
+    width: 3rem;
+    height: 3rem;
+}
+footer .email_box{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+footer .email_box .email{
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+footer .email_box input{
+    width: 20rem;
+    height: 2rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 8px;
+}
+footer .email_box .btn_3{
+    padding: 10px 26px;
+    border-radius: 12px;
+    border: none;
+    color: black;
+    background: var(--bg_btn);
+    cursor: pointer;
+    transition: all 0.25s;
+}
+footer .links{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer .links a{
+    transition: all .25s;
+}
+footer .links a:hover{
+    transform: translateY(-10px);
+}
+footer .cpyrgh{
+    font-size: 1rem;
+    opacity: .9;
+}
+/* end footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** media***/
+@media (max-width: 950px) {
+    
+    header .navbar{
+        display: none;
+    }
+    
+    section .cards{
+        flex-direction: column;
+        
+    }
+    section .cards .box{
+        margin: 0 auto;
+    }
+    footer .email_box{
+        width: 100%;
+        display: flex;
+        gap:.3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+    }
+    footer .links a img{
+        width: 2rem;
+        height: 2rem;
+    }
+    footer .email_box .email{
+        font-size: 1em;
+        font-family: sans-serif;
+    }
+    footer .email_box input{
+        width: 20rem;
+        height: 1rem;
+        padding: .5rem 3rem;
+        border: none;
+        border-radius: 8px;
+    }
+    footer .email_box .btn_3{
+        padding: 5px 16px;
+        border-radius: 12px;
+        border: none;
+        color: black;
+        background: var(--bg_btn);
+        cursor: pointer;
+        transition: all 0.25s;
+    }
+    footer .links{
+        width: 100%;
+        height: 3rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    footer .links a{
+        transition: all .25s;
+    }
+    footer .links a:hover{
+        transform: translateY(-10px);
+    }
+    footer .cpyrgh{
+        font-size: 1rem;
+        opacity: .9;
+    }
+    
+}
